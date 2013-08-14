@@ -1,10 +1,8 @@
 
-vpath %.c src
+vpath %.cpp src
 
-.LIBPATTERNS = lib%.a
 TARGET = SocketServer
 CFLAGS = -O3 -Wall -c
-LIBS =
 OBJS := $(patsubst %.cpp,%.o,$(wildcard src/*.cpp))
 
 all: $(TARGET)
